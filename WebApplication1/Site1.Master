@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+	
+	<%-----bootstrap css------%>
+	<link href="bootstrap/css/bootstrap1.min.css" rel="stylesheet" />
+	<%-----dataTables css------%>
+	<link href="dataTables/css/jquery.dataTables.min.css" rel="stylesheet" />
+	<%-----fontawesome css------%>
+	<link href="fontAwesome/css/all.css" rel="stylesheet" />
+
+	<%-----custom css------%>
+	<link href="css/customstyl.css" rel="stylesheet" />
+
+	<%-----jquery------%>
+	<script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+	<%-----popper js------%>
+	<script src="bootstrap/js/popper.min.js"></script>
+	<%-----bootstrap js------%>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<%--dataTables js--%>
+	<script src="dataTables/js/jquery.dataTables.min.js"></script>
+	
+	
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+	<style type='text/css'>
+        body { background-image: url(imgs/background6.jpg); }
+    </style>
+
+    <form id="form1" runat="server">
+        
+		<div>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light" height="60" style="background-color: #196f3d;><!--#196f3d;-->
+				<a class="navbar-brand" href="#">
+					<img src="imgs/eye-clipart-transparent-background-1.png" width="80" height="45" />
+					  |   Find-Eye   |
+				</a>
+
+				
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link list-group-item-action list-group-item-success" href="homepage.aspx">Pagrindinis puslapis</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link  list-group-item-action list-group-item-warning" href="contacts.aspx">Apie mus</a>
+                        </li>
+						<li class="nav-item active">
+                            <a class="nav-link  list-group-item-action list-group-item-success" href="https://wetransfer.com/downloads/f219a9db182370e7579bcec6d395918420200517200404/9e8303">Atsisiųsti aplikaciją</a>
+                        </li>
+                    </ul>
+ 
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link list-group-item-action list-group-item-success" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click" Visible="False">Peržiūrėti prekes</asp:LinkButton>
+                        </li>
+                        
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link list-group-item-action list-group-item-success" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Prisijungti</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link list-group-item-action list-group-item-warning" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Registruotis</asp:LinkButton>
+                        </li>
+
+						<li class="nav-item active">
+                            <asp:LinkButton class="nav-link list-group-item-action list-group-item-warning" ID="LinkButton9" runat="server" OnClick="LinkButton9_Click" Visible="False">Vartotojas</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link list-group-item-action list-group-item-success" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" Visible="False">Atsijungti</asp:LinkButton>
+                        </li>
+
+						
+                    </ul>
+                </div>
+
+			</nav>
+		</div>
+		<!-- Main Content Placeholder -->
+		<div>
+			<asp:ContentPlaceHolder  ID="ContentPlaceHolder1" runat="server">
+
+				
+			</asp:ContentPlaceHolder>
+		</div>
+		<!-- Main Content Placeholder -->
+
+		<footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+
+							<asp:LinkButton class="footerlinks" ID="LinkButton7" runat="server" OnClick="LinkButton7_Click" Visible="False">Prekių Pridėjimas</asp:LinkButton>
+                            &nbsp;
+
+							<asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server" OnClick="LinkButton8_Click">Kontaktai</asp:LinkButton>
+                            &nbsp;
+
+							<asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Administratoriaus prisijungimas</asp:LinkButton>
+                            &nbsp;							
+										
+							<asp:LinkButton class="footerlinks" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click" Visible="False">Vartotojų redagavimas</asp:LinkButton>
+                            &nbsp;
+
+							
+                        </p>
+ 
+                    </div>
+                </div>
+            </div>
+			<!--
+			<div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+							<asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server" OnClick="LinkButton8_Click">Kontaktai</asp:LinkButton>
+                            &nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>-->
+
+        </footer>
+
+
+
+    </form>
+</body>
+</html>
