@@ -41,7 +41,11 @@
     <form id="form1" runat="server">
         
 		<div>
+<<<<<<< Updated upstream
 			<nav class="navbar fixed-top navbar-expand-lg navbar-light" height="60" style="background-color: #196f3d;><!--#196f3d;-->
+=======
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #196f3d;><!--#196f3d;-->
+>>>>>>> Stashed changes
 				<a class="navbar-brand" href="#">
 					<img src="imgs/eye-clipart-transparent-background-1.png" width="80" height="45" />
 					  |   Find-Eye   |
